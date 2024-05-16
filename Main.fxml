@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+    <children>
+        <AnchorPane prefHeight="383.0" prefWidth="565.0" style="-fx-background-color: #A0A2B1;">
+            <children>
+                <Label fx:id="chatNameLabel" layoutX="122.0" layoutY="15.0" prefHeight="27.0" prefWidth="197.0" text="'s chat session for the  " textFill="DARKRED">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="chatArea" editable="false" layoutX="11.0" layoutY="53.0" prefHeight="202.0" prefWidth="543.0" promptText="Received messages are displayed here..." style="-fx-control-inner-background: #FFFFFF; -fx-text-fill: #000000;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextArea>
+                <TextField fx:id="messageField" layoutX="97.0" layoutY="264.0" prefHeight="60.0" prefWidth="353.0" promptText="Write your messages here" style="-fx-background-color: #FFFFFF;">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </TextField>
+                <Button fx:id="sendButton" layoutX="459.0" layoutY="263.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="83.0" style="-fx-background-color: #DDDDDD; -fx-text-fill: #8B0000;" text="Send" textFill="#8B0000">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <Label fx:id="clientNameLabel" layoutX="46.0" layoutY="15.0" prefHeight="27.0" prefWidth="71.0" text="Label" textFill="DARKRED">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="dateLabel" layoutX="310.0" layoutY="15.0" text="Label" textFill="DARKRED">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Label layoutX="425.0" layoutY="15.0" text="at" textFill="DARKRED">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label fx:id="timeLabel" layoutX="446.0" layoutY="15.0" text="Label" textFill="DARKRED">
+                    <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                    </font>
+                </Label>
+                <Button fx:id="cancelButton" layoutX="475.0" layoutY="301.0" mnemonicParsing="false" onAction="#handleCancelButton" style="-fx-background-color: #DDDDDD; -fx-text-fill: #8B0000;" text="Cancel" textFill="#8B0000">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Button>
+            <TextArea fx:id="notifTextArea" editable="false" layoutX="97.0" layoutY="336.0" prefHeight="39.0" prefWidth="353.0" />
+            <Label layoutX="6.0" layoutY="342.0" prefHeight="25.0" prefWidth="91.0" text="Notifications" textAlignment="CENTER" textFill="#575555">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="disconnectButton" layoutX="459.0" layoutY="338.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="91.0" style="-fx-background-color: #DDDDDD; -fx-text-fill: #8B0000;" text="Disconnect" textFill="#8B0000">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="10.0" layoutY="281.0" prefHeight="25.0" prefWidth="83.0" text="   Messages" textAlignment="CENTER" textFill="#575555">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
